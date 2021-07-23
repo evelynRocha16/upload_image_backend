@@ -1,10 +1,12 @@
 const express = require('express');
+const cors = require('cors');
+const router = require('./routes/index');
 
 // App
 const app = express();
 
-// Load routes
-const indexRoutes = require('./routes/index');
-app.use('/', indexRoutes);
+app.use(express.json());
+app.use(cors());
+app.use('/api', router);
 
 module.exports = app;
