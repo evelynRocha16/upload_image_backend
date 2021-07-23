@@ -1,1 +1,1 @@
-uploadMidia
+UPLOAD IMAGE
